@@ -36,3 +36,7 @@ header strong {
 .nav-part .menu>li {
     padding: 0 .6rem;
 }
+.on-scroll-nav {
+    background: white;
+    box-shadow: black;
+}
