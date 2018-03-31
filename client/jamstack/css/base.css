@@ -2,18 +2,24 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 14px;
-    font-family: leitura,serif;
+    font-size: 16px;
+    font-family: lora,serif;
+}
+body {
+    font-size: 1.125rem;
+}
+a {
+    text-decoration: none;
 }
 h1 {
-    font-size: calc(1.6rem * 6);
+    font-size: calc(1.2rem * 2.5);
     font-weight: 400;
 }
 h2 {
-    font-size: calc(1.6rem * 5);
+    font-size: calc(1.2rem * 2.25);
 }
 h3 {
-    font-size: calc(1.6rem * 3);
+    font-size: calc(1.2rem * 2);
 }
 section {
     margin: 2rem 0;

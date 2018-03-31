@@ -1,1 +1,38 @@
-@import './base.css'
+@import './base.css';
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-image: url(https://d33wubrfki0l68.cloudfront.net/03a47e685da8c54ccd78c4776f2ebc4b5da70000/f9472/img/jam-watermark.svg);
+    background-position: center;
+    background-size: cover;
+    padding: 156px 0 104px 0;
+}
+header h3 {
+    line-height: 1.6;
+}
+header strong {
+    font-weight: 400;
+    color:hsl(184, 82%, 52%);
+}
+.nav-part {
+    position: fixed;
+    left:0;
+    right:0;
+}
+.nav-part nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav-part .menu {
+    display: flex;
+}
+.nav-part .menu>li {
+    padding: 0 .6rem;
+}
