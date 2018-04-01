@@ -7,9 +7,13 @@ html {
 }
 body {
     font-size: 1.125rem;
+    line-height: 2.2rem;
 }
 a {
     text-decoration: none;
+}
+h1,h2,h3 {
+    padding: 1.6rem 0;
 }
 h1 {
     font-size: calc(1.2rem * 2.5);
@@ -22,7 +26,7 @@ h3 {
     font-size: calc(1.2rem * 2);
 }
 section {
-    margin: 2rem 0;
+    padding: 2rem 0;
 }
 p {
     margin: 1.6rem 0;
