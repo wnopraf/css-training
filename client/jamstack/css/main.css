@@ -98,3 +98,18 @@ header strong {
 .what .js, .what .api, .what .markup {
     overflow: hidden;
 }
+.not-jam .flex-point {
+    display: flex;
+    flex-wrap: wrap;
+}
+.not-jam .flex-point > .point {
+    width: 50%;
+    padding: 1.6rem 1.6rem 1.6rem 0;
+}
+.not-jam .point > img {
+    float:left;
+    margin-right: 1.6rem;
+}
+.not-jam .point > p {
+    margin: 0;
+}
