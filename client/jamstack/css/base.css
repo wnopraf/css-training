@@ -12,7 +12,7 @@ body {
 a {
     text-decoration: none;
 }
-h1,h2,h3 {
+h1,h2,h3,h4 {
     padding: 1.6rem 0;
 }
 h1 {
@@ -25,9 +25,12 @@ h2 {
 h3 {
     font-size: calc(1.2rem * 2);
 }
+h6 {
+    font-size: calc(1.2rem * 1.25);
+}
 section {
     padding: 2rem 0;
 }
 p {
-    margin: 1.6rem 0;
+    margin: 1rem 0;
 }

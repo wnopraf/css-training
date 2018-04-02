@@ -113,3 +113,11 @@ header strong {
 .not-jam .point > p {
     margin: 0;
 }
+.why .why-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.why .why-flex > .point {
+    width: 50%;
+    padding: 1.6rem 1.6rem 1.6rem 0;
+}
