@@ -61,7 +61,7 @@ header strong {
 .intro .faq a {
     display: inline-block;
     font-size: 1.6rem;
-    color: rgb(39, 225, 191);
+    color: rgb(73, 210, 197);
     padding-bottom: 1rem;
 }
 .intro .text {
@@ -69,4 +69,32 @@ header strong {
 }
 .text p:nth-child(1) {
     margin-top: 0;
+}
+.what p {
+    margin: 0;
+}
+.what img {
+    float: left;
+    margin-right: 1.6rem;
+}
+.what h2 {
+    padding-top: 3rem;
+}
+.what .js {
+    padding: 3rem 6rem 0;
+}
+.what .api, .what .markup {
+    padding: 0 6rem 0;
+}
+.what .api {
+    margin: -4rem 0;
+}
+.what .example {
+    margin-top: 3rem;
+}
+.what .example a {
+    color: rgb(73, 210, 197);
+}
+.what .js, .what .api, .what .markup {
+    overflow: hidden;
 }
