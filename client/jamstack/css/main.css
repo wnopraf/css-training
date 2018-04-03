@@ -131,3 +131,16 @@ header strong {
 .started a {
     color: rgb(73, 210, 197);
 }
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: rgb(249, 250, 246);
+}
+footer strong {
+    color: rgb(73, 210, 197);
+}
+footer > p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(186, 181, 181);
+}
