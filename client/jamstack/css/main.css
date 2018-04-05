@@ -1,7 +1,8 @@
 @import './base.css';
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
 .content {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 header {
@@ -34,14 +35,68 @@ header strong {
     font-size: 1.2rem;
     font-weight: bold;
 }
+.nav-part .nav-left, .nav-part .nav-right {
+    flex: 0 0 auto;
+}
 .nav-part .menu {
     display: flex;
     margin-top: 7px;
 }
 .nav-part .menu > li {
     padding: 0 .6rem;
+    flex: 0 0 auto;
 }
+.nav-part .mobile-action-menu {
+    display: none;
+}
+ .mobile-menu {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease,padding-top .5s ease;
+    width: 100%;
+    background: white;
+    padding: 0 2.6rem;
+}
+.mobile-menu-is-visible {
+    height: 500px;
+    padding: 2.6rem;
+}
+.nav-part .mobile-menu-media {
+    display: none;
+}
+.nav-part .responsive-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    width: 100%;
+    
+}
+.nav-part .responsive-menu a {
+    display: block;
+    padding: 1.35rem 0;
+    margin: .14rem 0;
+    border-radius: 4px;
+    background: rgb(248, 244, 244);
+}
+@media screen and (max-width: 900px) {
+    .nav-part .nav-right {
+        margin-right: 2rem;
+    }
+   .nav-part .mobile-action-menu {
+        display: block;
 
+    }
+    .nav-part .mobile-menu-media {
+        display: block;
+    }
+    /* [class*="entypo-"]:before {
+        font-family: 'entypo', sans-serif;
+    } */
+    .nav-part .menu {
+        display: none;
+    }
+}
 .on-scroll-nav {
     background: white;
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
