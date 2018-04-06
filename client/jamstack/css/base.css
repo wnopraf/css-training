@@ -2,33 +2,38 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 16px;
+    font-size: 18px;
     font-family: lora,serif;
-}
-body {
-    font-size: 1.125rem;
     line-height: 2.2;
 }
+@media screen and (max-width:768px) {
+    html {
+        font-size: 14px;
+        line-height: 2;
+    }
+}
+
 a {
     text-decoration: none;
     color: black;
 }
+
 h1,h2,h3,h6 {
     padding: 1.6rem 0;
 }
 h1 {
-    font-size: calc(1.2rem * 2.5);
-    font-weight: 400;
+    font-size: calc(1.rem * 2.25);
 }
 h2 {
-    font-size: calc(1.2rem * 2.25);
+    font-size: calc(1rem * 2);
 }
 h3 {
-    font-size: calc(1.2rem * 2);
+    font-size: calc(1rem * 1.75);
 }
 h6 {
-    font-size: calc(1.2rem * 1.25);
+    font-size: calc(1rem * 1.25);
 }
+
 section {
     padding: 2rem 0;
 }
