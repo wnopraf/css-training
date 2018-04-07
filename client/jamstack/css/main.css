@@ -152,33 +152,61 @@ header strong {
         padding: 1rem 1.3rem;
     }
 }
-.what p {
+.what p, .what h3 {
+    padding: 0 2rem;
     margin: 0;
+}
+.what .stack {
+    padding: 3rem 2rem;
+    max-width: 960px;
+    
+}
+.what .def {
+    overflow: hidden;
+    padding-top: 2rem;
+}
+.what .stack p {
+    margin: 0;
+    padding: 0;
+}
+.what h2 {
+    padding: 0;
 }
 .what figure {
     float: left;
     margin-right: 1.6rem;
 }
-.what h2 {
-    padding-top: 3rem;
-}
-.what .js {
-    padding: 3rem 6rem 0;
-}
-.what .api, .what .markup {
-    padding: 0 6rem 0;
-}
+
 .what .api {
     margin: -4rem 0;
 }
-.what .example {
-    margin-top: 3rem;
+.what p.example {
+    margin-top: 2rem;
 }
 .what .example a {
+    font-weight: 500;
     color: rgb(73, 210, 197);
 }
 .what .js, .what .api, .what .markup {
     overflow: hidden;
+}
+@media screen and (max-width: 767px){
+    .what > h3, .what > p {
+        text-align: center;
+        padding: 0 2rem;
+        padding: 0 2rem;
+        margin: 0;
+    }
+    .what .api {
+        margin: 1.6rem 0;
+    }
+    .what .flex-img {
+        width: 20.5%;
+    }
+    .what .def {
+        overflow: hidden;
+        padding-top: 0;
+    }
 }
 .not-jam .flex-point {
     display: flex;
