@@ -61,7 +61,7 @@ header strong {
     transition: height .5s ease,padding-top .5s ease;
     width: 100%;
     background: white;
-    padding: 0 2.6rem;
+    
 }
 .mobile-menu-is-visible {
     height: 500px;
@@ -133,7 +133,7 @@ header strong {
 .text p:nth-child(1) {
     margin-top: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     
     .intro {
         display: flex;
@@ -208,13 +208,17 @@ header strong {
         padding-top: 0;
     }
 }
+.not-jam > h1, .not-jam > p {
+    padding: 0 2rem;
+}
 .not-jam .flex-point {
     display: flex;
     flex-wrap: wrap;
+    padding: 1rem 2rem;
 }
 .not-jam .flex-point > .point {
     width: 50%;
-    padding: 1.6rem 1.6rem 1.6rem 0;
+    padding: 1rem 0rem;
 }
 .not-jam .point > img {
     float:left;
@@ -222,6 +226,28 @@ header strong {
 }
 .not-jam .point > p {
     margin: 0;
+    overflow: hidden;
+    font-size: 16px;
+}
+@media screen and (max-width:767px){
+    
+    .not-jam > h1, .not-jam > p {
+        text-align: center;
+    }
+    .not-jam .flex-point {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    } 
+    .not-jam .flex-point > .point {
+        width: 100%;
+        padding: 1.6rem 0;
+    }
+    .not-jam .point > img {
+        width: 15px;
+        margin-right: .6rem;
+        margin-top: .6rem;
+    }
 }
 .why h6 {
     padding: 0;

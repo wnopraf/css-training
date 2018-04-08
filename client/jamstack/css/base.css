@@ -6,11 +6,7 @@ html {
     font-family: lora,serif;
     line-height: 2;
 }
-@media screen and (max-width:769px) {
-    html {
-        font-size: 14px;
-    }
-}
+
 
 a {
     text-decoration: none;
@@ -38,4 +34,13 @@ section {
 }
 p {
     margin: 1rem 0;
+}
+@media screen and (max-width:767px) {
+    html {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
 }
