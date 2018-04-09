@@ -13,17 +13,23 @@ a {
     color: black;
 }
 
+@media screen and (max-width:767px) {
+    html {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
 h1,h2,h3,h6 {
     padding: 1.6rem 0;
 }
 h1 {
-    font-size: calc(1rem * 2.25);
+    font-size: calc(1rem * 1.90);
 }
 h2 {
-    font-size: calc(1rem * 2);
+    font-size: calc(1rem * 1.75);
 }
 h3 {
-    font-size: calc(1rem * 1.75);
+    font-size: calc(1rem * 1.50);
 }
 h6 {
     font-size: calc(1rem * 1.25);
@@ -34,13 +40,4 @@ section {
 }
 p {
     margin: 1rem 0;
-}
-@media screen and (max-width:767px) {
-    html {
-        font-size: 14px;
-    }
-    h1 {
-        font-size: 1.8rem;
-        line-height: 1.6;
-    }
 }
