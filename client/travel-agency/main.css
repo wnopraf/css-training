@@ -1,0 +1,34 @@
+:root {
+    box-sizing: border-box;
+    --brand-color: hsl(112, 71%, 40%);
+    --header-button-letter-color: hsl(112, 47%, 59%);
+    --header-letter-color: hsl(0, 0%, 100%);
+    --text-color: hsl(210,11%,15%);
+    --md-breakpoint: 48em;
+    --lg-breakpoint: 62em;
+    --xl-breakpoint: 75;
+    font-size: 16px;
+    --main-font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+* , *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font-family);
+    line-height: 1.5;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+@media (min-width: --md-breakpoint) {
+    max-width: calc(var(--md-breakpoint) - 2em);
+}
+@media (min-width: --lg-breakpoint) {
+    max-width: calc(var(--md-breakpoint) - 2em);
+}
+@media (min-width: --xl-breakpoint) {
+    max-width: calc(var(--md-breakpoint) - 2em);
+}
