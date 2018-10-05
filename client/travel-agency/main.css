@@ -37,10 +37,9 @@ h1,h4 {
 @media (min-width: --xl-breakpoint) {
     max-width: calc(var(--md-breakpoint) - 2em);
 }
-header {
-    position: absolute;
-    top:0;
-    left:0;
+
+.aux-pos-wrapper {
+    position: relative;
     background-image: url(https://markups.io/demo/outing/assets/images/head-featured-bg.jpg);
     background-position: center center;
     background-attachment: fixed;
@@ -48,9 +47,9 @@ header {
     color: var(--header-letter-color);
     z-index: 1;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 2rem; 
 }
-header::after {
+.aux-pos-wrapper::after {
     content: '';
     position: absolute;
     top:0;
