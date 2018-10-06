@@ -5,6 +5,7 @@
     --header-letter-color: hsl(0, 0%, 100%);
     --icon-item-border-round-color:  hsl(0, 0%, 80%);
     --text-color: hsl(210,11%,15%);
+    --bg-gradient-brand-color: linear-gradient(to right, #64b3f4, #37b721);
     --md-breakpoint: 48em;
     --lg-breakpoint: 62em;
     --xl-breakpoint: 75;
@@ -71,7 +72,7 @@ header {
     left:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #64b3f4, #37b721);
+    background: var(--bg-gradient-brand-color);
     opacity: .87;
     z-index: -1;
 }
@@ -184,4 +185,30 @@ header {
     border: 2px solid var(--icon-item-border-round-color);
     font-size: 1.8rem;
     color: var(--brand-color);
+}
+.video-trip {
+    position: relative;
+    padding-top: 2rem;
+    background-image: url(https://markups.io/demo/outing/assets/images/about-video-bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    height: 80vh;
+    z-index: 2;
+}
+.video-trip::after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-gradient-brand-color);
+    opacity: .9;
+    z-index: -1;
+}
+.video-trip h3 {
+    line-height: 1.15;
 }
