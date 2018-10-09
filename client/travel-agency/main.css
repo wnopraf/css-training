@@ -6,9 +6,10 @@
     --icon-item-border-round-color:  hsl(0, 0%, 80%);
     --text-color: hsl(210,11%,15%);
     --bg-gradient-brand-color: linear-gradient(to right, #64b3f4, #37b721);
+    --light-gray-color: hsl(0, 0%, 97%);
     --md-breakpoint: 48em;
     --lg-breakpoint: 62em;
-    --xl-breakpoint: 75;
+    --xl-breakpoint: 75em;
     font-size: 15px;
     --main-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     --title-font:poppins, sans-serif;
@@ -211,4 +212,67 @@ header {
 }
 .video-trip h3 {
     line-height: 1.15;
+}
+.header-paragraph {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.grid-6-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-6-section__gutter-wrapper {
+    /* complethe in higher breakpoints */
+    text-align: center;
+    padding: 0 1rem;
+    
+}
+.grid-6-section__gutter-wrapper + .grid-6-section__gutter-wrapper {
+    margin-top: 1.8rem;
+    
+}
+.grid-6-section__item {
+    background-color: var(--light-gray-color);
+    padding-bottom: 1.6rem;
+}
+.grid-6-section__item > h3 {
+    margin-bottom: 0;
+}
+.grid-6-section__item > p:first-of-type {
+    font-size: 1.05rem;
+    font-family: var(--title-font);
+    font-weight: 600;
+    
+}
+.grid-6-section__item > *:not(img) {
+    padding: 0 1rem;
+}
+.grid-6-section__item img {
+    max-width: 100%;
+
+}
+
+
+.grid-2-section {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.space-2-section {
+    margin-top: 2rem;
+}
+.grid-2-section__item-1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 20%);
+}
+.grid-2-section__item-2 > button {
+    border: 1px solid var(--brand-color);
+    padding: .8rem 1.6rem;
+    border-radius: 20px;
+    color: var(--brand-color);
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 500;
 }
