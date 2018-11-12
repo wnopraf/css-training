@@ -475,7 +475,8 @@ header {
 .contact-us__item textarea {
   display: block;
   font-size: 16px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 20px;
   min-width: 100%;
   border: none;
   border-bottom: 1px solid rgb(163, 163, 168);
@@ -485,7 +486,7 @@ header {
 }
 .contact-us input::placeholder,
 .contact-us textarea::placeholder {
-  color: var(--icon-item-border-round-color);
+  color: rgb(90, 89, 89);
   font-size: 1rem;
 }
 .contact-us input:focus,
@@ -496,10 +497,10 @@ header {
 }
 .contact-us button {
   margin: 3rem auto 0;
-  padding: 1.3rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
-  border-radius: 15px;
-  border: none;
+  border-radius: 20px;
+  border: 1px solid var(--brand-color);
   background-color: var(--brand-color);
   color: white;
   cursor: pointer;
@@ -510,4 +511,39 @@ header {
   background-color: white;
   color: var(--brand-color);
   border: 1px solid var(--brand-color);
+}
+.map-section {
+  width: 100%;
+  border: none;
+}
+footer {
+  margin-top: 2rem;
+}
+.foot-block {
+  text-align: center;
+}
+.foot-block p {
+  font-size: 0.9rem;
+}
+.social-icons {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.social-icons__item {
+  transition: all 300ms;
+  display: inline-block;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+.social-icons__item + .social-icons__item {
+  margin-left: 0.4rem;
+}
+.social-icons__item:hover {
+  color: var(--brand-color);
+  border-color: var(--brand-color);
 }
