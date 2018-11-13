@@ -209,14 +209,13 @@ header {
 }
 .video-trip {
   position: relative;
-  padding-top: 2rem;
+  padding: 5rem 0;
   background-image: url(https://markups.io/demo/outing/assets/images/about-video-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   text-align: center;
   color: white;
-  height: 80vh;
   z-index: 2;
 }
 .video-trip::after {
@@ -229,6 +228,14 @@ header {
   background-image: var(--bg-gradient-brand-color);
   opacity: 0.9;
   z-index: -1;
+}
+.video-trip__video {
+  margin-top: 4rem;
+}
+.video-trip__video iframe {
+  width: 100%;
+  height: 290px;
+  border: none;
 }
 .video-trip h3 {
   line-height: 1.15;
