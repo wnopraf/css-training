@@ -78,6 +78,7 @@ header {
 }
 .aux-pos-wrapper {
   position: relative;
+  font-size: 1rem;
   background-image: url(https://markups.io/demo/outing/assets/images/head-featured-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
@@ -85,7 +86,12 @@ header {
   color: var(--header-letter-color);
   z-index: 1;
   text-align: center;
-  padding-top: 2rem;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .aux-pos-wrapper {
+    padding-bottom: 15em;
+  }
 }
 .aux-pos-wrapper::after {
   content: '';
@@ -105,75 +111,121 @@ header {
   color: var(-var(--header-letter-color));
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  .brand-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .brand-bar__logo {
   font-family: var(--title-font);
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 700;
-  padding: 0.2rem 1rem;
+  padding: 0.2em 1em;
   color: var(--brand-color);
   background-color: white;
-  margin-bottom: 1rem;
 }
+
 .brand-bar__contact {
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+@media (min-width: 480px) {
+  .brand-bar__contact {
+    margin-top: 1.6em;
+    font-size: 1.05em;
+  }
+}
+@media (min-width: 768px) {
+  .brand-bar__contact {
+    margin-top: 0;
+  }
 }
 .brand-bar__contact-phone {
-  padding-left: 0.6rem;
   order: 2;
+}
+@media (min-width: 768px) {
+  .brand-bar__contact-phone {
+    order: 0;
+  }
+  .brand-bar__contact-phone::after {
+    content: '';
+    margin: 0 8px;
+    border-right: 1.5px solid white;
+  }
 }
 .brand-bar__contact-phone .fa-phone {
   transform: rotate(90deg);
 }
-.brand-bar__contact-mail {
-  padding-right: 0.6rem;
-  border-right: 1px solid white;
+.brand-bar__contact-mail::after {
+  content: '';
+  margin: 0 8px;
+  border-right: 1.5px solid white;
 }
+@media (min-width: 768px) {
+  .brand-bar__contact-mail::after {
+    margin: 0;
+    border: none;
+  }
+}
+
 .intro {
-  margin-top: 3rem;
+  margin-top: 3em;
+}
+@media (min-width: 768px) {
+  .intro {
+    font-size: 1.4em;
+    margin-top: 7.5em;
+  }
 }
 .intro__welcome {
   margin: 0;
-  margin-bottom: -0.3rem;
-  font-size: 0.9rem;
+  margin-bottom: -1.6em;
+  font-size: 0.9em;
 }
 .intro__message {
-  margin: 1rem 0;
+  margin: 1em 0;
   line-height: 1;
-  font-size: 1.65rem;
+  font-size: 1.75em;
   text-transform: uppercase;
+}
+.intro__text {
+  margin-top: -0.9em;
+  font-weight: lighter;
+}
+@media (min-width: 768px) {
+  .intro__text {
+    font-weight: 300;
+    font-size: 0.8em;
+  }
 }
 .intro__welcome,
 .intro__message {
-  font-weight: 200;
+  font-weight: 600;
 }
 .intro__button {
-  position: relative;
-  width: 150px;
-  margin-top: 2rem;
-  margin-bottom: 6rem;
-  padding: 1rem 1.5rem;
+  display: inline-block;
+  margin-top: 2.3em;
+  padding: 0.75em 1.2em;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 30px;
   color: var(--brand-color);
-  font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   border: none;
 }
-.intro__button::after {
-  content: '';
-  position: absolute;
-  right: calc(150px / 2 - 20px / 2);
-  top: 6rem;
-  width: 20px;
-  height: 20px;
-  border-color: transparent;
-  border-width: 6px;
-  border-left-color: white;
-  border-bottom-color: white;
-  border-style: solid;
-  transform: rotate(-45deg);
+@media (min-width: 768px) {
+  .intro__button {
+    font-size: 0.9em;
+  }
+}
+.intro i {
+  display: block;
+  font-size: 2.8rem;
+  margin-top: 1.5em;
 }
 .pic-text {
   padding-top: 2rem;
