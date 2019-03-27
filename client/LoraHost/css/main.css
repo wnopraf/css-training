@@ -7,14 +7,34 @@
   --nav-menu-bg-color: rgb(118, 118, 255);
   --login-bg-hover-color: rgb(30, 24, 89);
   --opera-sans-font: 'Open Sans', sans-serif;
+  --bg-header-color: linear-gradient(to right, #2926ac 0%, #6128be 100%);
+  --menu-list-item-color: rgba(255, 255, 255, 0.16);
+  --a-visited-color: white;
 }
 html,
 * {
   font-family: var(--opera-sans-font);
 }
+
 header {
+  position: relative;
   white-space: normal;
   height: auto;
+  background-image: url(https://colorlib.com/preview/theme/lorahost/img/banner/hero-banner-bg.png);
+  padding: 5rem 0;
+  z-index: 2;
+  color: white;
+}
+header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: var(--bg-header-color);
+  opacity: 0.9;
+  z-index: -1;
 }
 a:hover {
   text-decoration: none;
@@ -37,7 +57,7 @@ a:hover {
 }
 .nav-bar {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   top: 0;
   left: 0;
@@ -45,6 +65,13 @@ a:hover {
   background-color: var(--nav-menu-bg-color);
   color: white;
 }
+@media (min-width: 960px) {
+  .nav-bar {
+    background-color: var(--bg-header-color);
+    border-bottom: 1px solid var(--menu-list-item-color);
+  }
+}
+
 .nav-bar__logo h1 {
   margin: 0;
 }
@@ -68,6 +95,12 @@ a:hover {
   }
   .nav-wrapper__logo {
     margin-right: 4rem;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 1260px) {
+  .nav-wrapper__logo {
+    margin-right: 7rem;
   }
 }
 .nav-wrapper__res i {
@@ -77,7 +110,6 @@ a:hover {
   overflow: scroll;
   min-width: 100%;
   transition: height 0.3s;
-  background-color: var(--nav-menu-bg-color);
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -103,12 +135,16 @@ a:hover {
   .nav-wrapper__menu-items > a {
     padding: 0;
     flex: 0;
-    margin-right: 1.6rem;
     line-height: 5;
   }
 }
 .nav-wrapper__menu-items > a:not(:first-child) {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--menu-list-item-color);
+}
+@media (min-width: 768px) {
+  .nav-wrapper__menu-items > a:not(:first-child) {
+    margin-left: 1rem;
+  }
 }
 .nav-wrapper__menu-items > a:first-child:after {
   content: '';
@@ -168,4 +204,37 @@ a:hover {
 .align-center {
   justify-content: center;
   align-items: center;
+}
+.header-content h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.3rem;
+  letter-spacing: -2px;
+  margin: 0;
+  line-height: 1.6;
+}
+.header-content p {
+  margin-top: var(--universal-margin);
+  font-size: 0.9rem;
+  font-weight: 100;
+  line-height: 2;
+}
+
+.header-content a {
+  padding: 0.6rem 1.8rem;
+  margin-top: 2rem;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 25px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.header-content a:hover {
+  background-color: var(--login-bg-hover-color);
+  border-color: var(--login-bg-hover-color);
 }

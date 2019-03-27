@@ -7,8 +7,7 @@ let isFixedNav = false
 document.addEventListener('scroll', onScroll)
 resButton.addEventListener('click', toggleMenu)
 
-function toggleMenu() {
-  console.log('togglin menu')
+function toggleMenu () {
   const cero = '0px'
   const auto = '300px'
   if (resMenu.style.height === cero) {
@@ -18,14 +17,13 @@ function toggleMenu() {
   }
 }
 
-function onScroll(e) {
+function onScroll (e) {
   const scrollElm = this.scrollingElement
-  console.log('onScroll', scrollElm.scrollTop)
+
   if (scrollElm.scrollTop >= 16 * 8) {
-    console.log('log', '', '')
     if (isFixedNav) return
     isFixedNav = true
-
+    navWrapper.style.backgroundColor = 'rgb(118, 118, 255)'
     navWrapper.style.transform = `translateY(-100%)`
     navWrapper.style.transition = 'all .5s'
 
@@ -36,7 +34,7 @@ function onScroll(e) {
   } else if (scrollElm.scrollTop < 16 * 8 && isFixedNav) {
     navWrapper.style.position = 'absolute'
     navWrapper.style.transform = 'translateY(0px)'
-
+    navWrapper.style.backgroundColor = ''
     isFixedNav = false
   }
 }
