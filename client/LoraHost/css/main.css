@@ -6,16 +6,26 @@
 :root {
   --nav-menu-bg-color: rgb(118, 118, 255);
   --login-bg-hover-color: rgb(30, 24, 89);
-  --opera-sans-font: 'Open Sans', sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --h-font: 'Lato', sans-serif;
   --bg-header-color: linear-gradient(to right, #2926ac 0%, #6128be 100%);
   --menu-list-item-color: rgba(255, 255, 255, 0.16);
   --a-visited-color: white;
+  --text-violet-color: rgb(30, 24, 89);
+  --form-section-bg-color: rgb(238, 238, 243);
 }
 html,
 * {
-  font-family: var(--opera-sans-font);
+  font-family: var(--main-font);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--h-font);
+}
 header {
   position: relative;
   white-space: normal;
@@ -237,4 +247,87 @@ a:hover {
 .header-content a:hover {
   background-color: var(--login-bg-hover-color);
   border-color: var(--login-bg-hover-color);
+}
+.form-section {
+  padding: 3rem 0;
+  background-color: var(--form-section-bg-color);
+}
+.form-section h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: var(--text-violet-color);
+}
+@media (min-width: 768px) {
+  .form-section h3 {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .form-section__row-aux {
+    padding-left: 4rem;
+  }
+}
+.form-section__inputs {
+  margin: 1.6rem 0;
+}
+.form-section__inputs > * {
+  height: 48px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .form-section__inputs > * {
+    height: 60px;
+  }
+}
+.form-section__inputs input {
+}
+.form-section__inputs input:hover,
+.form-section__inputs input:focus {
+  border-color: var(--secondary-border-color) !important;
+  outline: none;
+}
+.form-section__inputs button {
+  background-image: var(--bg-header-color);
+  color: white;
+  font-weight: 600;
+  margin-left: 1rem;
+  box-shadow: 0px 18px 20px 0px rgba(116, 103, 243, 0.28);
+}
+.form-section__checks input {
+  width: 14px;
+  height: 14px;
+}
+.form-section__checks label {
+  font-weight: 600;
+  color: var(--text-violet-color);
+}
+@media (min-width: 768px) {
+  .form-section__checks__item {
+    margin-right: 1rem;
+    flex: 0 0 auto;
+  }
+}
+.form-section__checks__item:after {
+  content: '($5.99)';
+  font-family: var(--main-font);
+  color: rgb(155, 155, 155);
+}
+.trusted {
+  padding: 3rem 0;
+}
+.trusted h3 {
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: grey;
+  text-align: center;
+}
+.trusted__logos {
+  flex-wrap: nowrap;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.575);
+}
+.trusted__logo-item {
+  text-align: center;
 }
