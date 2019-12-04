@@ -1,6 +1,6 @@
 # Css training
 
-A proyect created to help me increasing my css skills learning by doing. I think that could help beginners to learn following the same path.
+A project created to help me increasing my css skills learning by doing. I think that could help beginners to learn following the same path.
 
 ## How to
 
